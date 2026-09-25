@@ -54,5 +54,17 @@ class Program
         chihuahua.MakeSound();
         chihuahua.Eat();
         chihuahua.Shiver();
+
+        Console.WriteLine();
+
+        // Put all animals in one array, the array only knows them as Animal
+        Animal[] animals = { animal, dog, cat, parrot, bulldog, chihuahua };
+
+        // Every animal still uses its own MakeSound because of override
+        Console.WriteLine("Alla djur i zoot låter:");
+        foreach (Animal zooAnimal in animals)
+        {
+            zooAnimal.MakeSound();
+        }
     }
 }
