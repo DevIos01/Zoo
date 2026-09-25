@@ -27,5 +27,14 @@ class Program
         cat.MakeSound();
         cat.Sleep();
         cat.Purr();
+
+        Console.WriteLine();
+
+        // Create a parrot, it gets its default values from the Parrot class
+        Parrot parrot = new Parrot("Polly");
+        Console.WriteLine($"{parrot.Name}: vingbredd {parrot.WingSpan} cm, {parrot.Age} år, {parrot.Weight} kg");
+        parrot.MakeSound();
+        parrot.Eat();
+        parrot.Fly();
     }
 }
