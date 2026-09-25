@@ -36,5 +36,23 @@ class Program
         parrot.MakeSound();
         parrot.Eat();
         parrot.Fly();
+
+        Console.WriteLine();
+
+        // Create a bulldog, it inherits from Dog which inherits from Animal
+        Bulldog bulldog = new Bulldog("Bruno");
+        Console.WriteLine($"{bulldog.Name}: ras {bulldog.Breed}, {bulldog.Age} år, {bulldog.Weight} kg");
+        bulldog.MakeSound();
+        bulldog.Fetch();
+        bulldog.Snore();
+
+        Console.WriteLine();
+
+        // Create a chihuahua, it also inherits from Dog
+        Chihuahua chihuahua = new Chihuahua("Pixie");
+        Console.WriteLine($"{chihuahua.Name}: ras {chihuahua.Breed}, {chihuahua.Age} år, {chihuahua.Weight} kg, halsband {chihuahua.CollarColor}");
+        chihuahua.MakeSound();
+        chihuahua.Eat();
+        chihuahua.Shiver();
     }
 }
