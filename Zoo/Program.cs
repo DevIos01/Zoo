@@ -18,5 +18,14 @@ class Program
         dog.MakeSound();
         dog.Eat();
         dog.Fetch();
+
+        Console.WriteLine();
+
+        // Create a cat, it gets its default values from the Cat class
+        Cat cat = new Cat("Misse");
+        Console.WriteLine($"{cat.Name}: pälsfärg {cat.FurColor}, {cat.Age} år, {cat.Weight} kg");
+        cat.MakeSound();
+        cat.Sleep();
+        cat.Purr();
     }
 }
